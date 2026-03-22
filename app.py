@@ -5,7 +5,7 @@ from datetime import datetime
 from flask import Flask, abort, redirect, render_template, request, session, url_for
 from werkzeug.security import check_password_hash, generate_password_hash
 
-from medha import init_db
+from db import init_db
 from medha.extensions import db
 from medha.models import ChatMessage, MindMapNode, Task, User
 
